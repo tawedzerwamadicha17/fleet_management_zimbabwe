@@ -1,0 +1,68 @@
+{
+ "doctype": "Dashboard",
+ "name": "Fleet Management",
+ "dashboard_name": "Fleet Management",
+ "module": "Fleet Management",
+ "is_standard": 1,
+ "cards": [
+  {
+   "card": "Active Trips"
+  },
+  {
+   "card": "Trips En Route"
+  },
+  {
+   "card": "Trips Returning"
+  },
+  {
+   "card": "Trips Booked"
+  },
+  {
+   "card": "Vehicles Available"
+  },
+  {
+   "card": "Vehicles Under Maintenance"
+  },
+  {
+   "card": "Requests Awaiting Assignment"
+  },
+  {
+   "card": "Fuel Requests Awaiting Approval"
+  },
+  {
+   "card": "Border Processing Open"
+  },
+  {
+   "card": "Documents Expired"
+  },
+  {
+   "card": "Documents Expiring Soon"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Trips by Status",
+   "width": "Half"
+  },
+  {
+   "chart": "Trips per Month",
+   "width": "Half"
+  },
+  {
+   "chart": "Fleet Status",
+   "width": "Half"
+  },
+  {
+   "chart": "Transport Requests by Assignment",
+   "width": "Half"
+  },
+  {
+   "chart": "Fuel Requests by Status",
+   "width": "Half"
+  },
+  {
+   "chart": "Trips by Transporter Type",
+   "width": "Half"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "doctype": "Dashboard Chart",
+ "name": "Trips by Transporter Type",
+ "chart_name": "Trips by Transporter Type",
+ "chart_type": "Group By",
+ "document_type": "Vehicle Trip",
+ "type": "Pie",
+ "is_public": 1,
+ "is_standard": 1,
+ "module": "Fleet Management",
+ "filters_json": "[]",
+ "dynamic_filters_json": "[]",
+ "color": "#2E7D32",
+ "custom_options": "{}",
+ "group_by_type": "Count",
+ "group_by_based_on": "transporter_type"
+}

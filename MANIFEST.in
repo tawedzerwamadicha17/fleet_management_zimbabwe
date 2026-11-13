@@ -1,0 +1,2 @@
+include MANIFEST.in
+recursive-include fleet_management_zimbabwe *.json *.js *.css *.html *.txt *.py *.md

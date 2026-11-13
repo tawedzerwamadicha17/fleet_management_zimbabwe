@@ -1,0 +1,192 @@
+{
+ "doctype": "DocType",
+ "name": "ZIMRA Fleet Settings",
+ "module": "Fleet Management",
+ "issingle": 1,
+ "custom": 0,
+ "editable_grid": 1,
+ "fields": [
+  {
+   "fieldname": "sec_taxpayer",
+   "label": "Taxpayer",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bp_number",
+   "label": "Company TIN / BP Number",
+   "fieldtype": "Data",
+   "reqd": 1,
+   "description": "10 digits, as registered with ZIMRA"
+  },
+  {
+   "fieldname": "vat_number",
+   "label": "VAT Registration Number",
+   "fieldtype": "Data",
+   "description": "9 digits. Leave blank if not VAT registered"
+  },
+  {
+   "fieldname": "vat_rate",
+   "label": "Standard VAT Rate (%)",
+   "fieldtype": "Float",
+   "default": "15.5",
+   "description": "15.5% from 1 Jan 2026 (Finance Act No. 7 of 2025). Change here if ZIMRA changes it"
+  },
+  {
+   "fieldname": "zero_rate_international_transport",
+   "label": "Zero-rate international transport of goods",
+   "fieldtype": "Check",
+   "default": "1",
+   "description": "Confirm treatment with your tax advisor before relying on this"
+  },
+  {
+   "fieldname": "cb1",
+   "label": "",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "local_currency",
+   "label": "Local Currency",
+   "fieldtype": "Link",
+   "options": "Currency",
+   "default": "ZWG"
+  },
+  {
+   "fieldname": "foreign_currency",
+   "label": "Foreign Currency",
+   "fieldtype": "Link",
+   "options": "Currency",
+   "default": "USD"
+  },
+  {
+   "fieldname": "sec_fdms",
+   "label": "ZIMRA FDMS (Fiscalisation)",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fdms_enabled",
+   "label": "Enable FDMS Fiscalisation",
+   "fieldtype": "Check"
+  },
+  {
+   "fieldname": "environment",
+   "label": "Environment",
+   "fieldtype": "Select",
+   "options": "Test\nProduction",
+   "default": "Test"
+  },
+  {
+   "fieldname": "fdms_base_url",
+   "label": "FDMS Gateway Base URL",
+   "fieldtype": "Data",
+   "description": "As issued by ZIMRA for your device and environment"
+  },
+  {
+   "fieldname": "verification_url",
+   "label": "Receipt Verification URL",
+   "fieldtype": "Data",
+   "default": "https://fdms.zimra.co.zw",
+   "description": "Base URL used to build the QR code verification link"
+  },
+  {
+   "fieldname": "cb2",
+   "label": "",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "device_id",
+   "label": "Fiscal Device ID",
+   "fieldtype": "Int"
+  },
+  {
+   "fieldname": "device_serial_no",
+   "label": "Device Serial No",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "device_model",
+   "label": "Device Model Name / Version",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "client_certificate",
+   "label": "Device Certificate (PEM)",
+   "fieldtype": "Attach"
+  },
+  {
+   "fieldname": "client_private_key",
+   "label": "Device Private Key (PEM)",
+   "fieldtype": "Attach"
+  },
+  {
+   "fieldname": "sec_tax_ids",
+   "label": "FDMS Tax IDs (from device GetConfig)",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tax_id_standard",
+   "label": "Standard-rated Tax ID",
+   "fieldtype": "Int"
+  },
+  {
+   "fieldname": "tax_id_zero",
+   "label": "Zero-rated Tax ID",
+   "fieldtype": "Int"
+  },
+  {
+   "fieldname": "tax_id_exempt",
+   "label": "Exempt Tax ID",
+   "fieldtype": "Int"
+  },
+  {
+   "fieldname": "sec_compliance",
+   "label": "Fleet Compliance",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "block_trip_on_expired_documents",
+   "label": "Block Vehicle Trip when mandatory documents are expired",
+   "fieldtype": "Check",
+   "default": "1"
+  },
+  {
+   "fieldname": "mandatory_document_types",
+   "label": "Mandatory Document Types",
+   "fieldtype": "Small Text",
+   "default": "ZINARA Vehicle Licence\nVID Certificate of Fitness\nThird Party Insurance Certificate\nOperator's Licence (Road Service Permit)",
+   "description": "One per line. Must match Vehicle Documents Type names"
+  },
+  {
+   "fieldname": "international_document_types",
+   "label": "Extra Documents for International Trips",
+   "fieldtype": "Small Text",
+   "default": "COMESA Yellow Card\nCross-Border Road Access Fee Receipt\nZIMRA Carbon Tax Certificate",
+   "description": "One per line"
+  },
+  {
+   "fieldname": "expiry_alert_days",
+   "label": "Alert Before Expiry (days)",
+   "fieldtype": "Int",
+   "default": "30"
+  },
+  {
+   "fieldname": "alert_recipients",
+   "label": "Alert Recipients (emails, comma separated)",
+   "fieldtype": "Small Text"
+  }
+ ],
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1
+  },
+  {
+   "role": "Accounts Manager",
+   "read": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
