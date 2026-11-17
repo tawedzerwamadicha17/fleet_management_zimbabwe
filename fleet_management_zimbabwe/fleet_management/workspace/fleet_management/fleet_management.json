@@ -1,0 +1,553 @@
+{
+ "doctype": "Workspace",
+ "name": "Fleet Management",
+ "label": "Fleet Management",
+ "title": "Fleet Management",
+ "module": "Fleet Management",
+ "public": 1,
+ "is_hidden": 0,
+ "sequence_id": 1.0,
+ "icon": "truck",
+ "indicator_color": "green",
+ "description": "Fleet and transport operations for Zimbabwe",
+ "content": "[{\"id\": \"ujOeHwdFcA\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Fleet Dashboard</b></span>\", \"col\": 12}}, {\"id\": \"efAZhnM6Jy\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Active Trips\", \"col\": 3}}, {\"id\": \"8c1rihtYlK\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Vehicles Available\", \"col\": 3}}, {\"id\": \"NxHddmQAtK\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Requests Awaiting Assignment\", \"col\": 3}}, {\"id\": \"CsXRpJG2Tr\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Documents Expired\", \"col\": 3}}, {\"id\": \"8hzUjEcPVJ\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Trips Booked\", \"col\": 3}}, {\"id\": \"2tRKJC06DP\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Trips En Route\", \"col\": 3}}, {\"id\": \"dRO9YrxPbC\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Trips Returning\", \"col\": 3}}, {\"id\": \"khdVipy2eB\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Vehicles Under Maintenance\", \"col\": 3}}, {\"id\": \"I2Y1rzw27j\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Fuel Requests Awaiting Approval\", \"col\": 3}}, {\"id\": \"kooEKqazwJ\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Border Processing Open\", \"col\": 3}}, {\"id\": \"7QFMPd3W2X\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Documents Expiring Soon\", \"col\": 3}}, {\"id\": \"yygNdemkvd\", \"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"id\": \"ajgwb2Mjpv\", \"type\": \"chart\", \"data\": {\"chart_name\": \"Trips per Month\", \"col\": 12}}, {\"id\": \"wh09CDfgvq\", \"type\": \"chart\", \"data\": {\"chart_name\": \"Trips by Status\", \"col\": 6}}, {\"id\": \"Zkb6GjHbG8\", \"type\": \"chart\", \"data\": {\"chart_name\": \"Fleet Status\", \"col\": 6}}, {\"id\": \"1RqwkVHWun\", \"type\": \"chart\", \"data\": {\"chart_name\": \"Transport Requests by Assignment\", \"col\": 6}}, {\"id\": \"Y90XYToGwb\", \"type\": \"chart\", \"data\": {\"chart_name\": \"Fuel Requests by Status\", \"col\": 6}}, {\"id\": \"brqQ7B697w\", \"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"id\": \"nommM30DOX\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Quick Access</b></span>\", \"col\": 12}}, {\"id\": \"fO4WUDlWuX\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"New Transport Request\", \"col\": 3}}, {\"id\": \"8yy6Skhj4Y\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Vehicle Trips\", \"col\": 3}}, {\"id\": \"jZ8OvIia8O\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Transport Requests\", \"col\": 3}}, {\"id\": \"G5A2ZnpsoK\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Vehicles\", \"col\": 3}}, {\"id\": \"qzi4vCK4A4\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Fuel Requests\", \"col\": 3}}, {\"id\": \"FGGbBlaXkD\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Border Processing\", \"col\": 3}}, {\"id\": \"SIuGIWgIpr\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Fleet Dashboard\", \"col\": 3}}, {\"id\": \"VFIV4BLFFQ\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Vehicle Status Report\", \"col\": 3}}, {\"id\": \"CHD6R26qI6\", \"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"id\": \"0ihBeoePW3\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Masters &amp; Reports</b></span>\", \"col\": 12}}, {\"id\": \"jSOi27n7yE\", \"type\": \"card\", \"data\": {\"card_name\": \"Operations\", \"col\": 4}}, {\"id\": \"9ZkAFvmtSb\", \"type\": \"card\", \"data\": {\"card_name\": \"Fleet\", \"col\": 4}}, {\"id\": \"IBbuMFd9W8\", \"type\": \"card\", \"data\": {\"card_name\": \"Maintenance & Inspection\", \"col\": 4}}, {\"id\": \"gqcWqiA4Yq\", \"type\": \"card\", \"data\": {\"card_name\": \"Fuel & Payments\", \"col\": 4}}, {\"id\": \"j4JRfdQAe6\", \"type\": \"card\", \"data\": {\"card_name\": \"Border & Clearing\", \"col\": 4}}, {\"id\": \"NXf1e1CvI5\", \"type\": \"card\", \"data\": {\"card_name\": \"Zimbabwe Compliance\", \"col\": 4}}, {\"id\": \"qiGogkdmts\", \"type\": \"card\", \"data\": {\"card_name\": \"Reports\", \"col\": 4}}]",
+ "charts": [
+  {
+   "chart_name": "Trips by Status",
+   "label": "Trips by Status"
+  },
+  {
+   "chart_name": "Trips per Month",
+   "label": "Trips per Month"
+  },
+  {
+   "chart_name": "Fleet Status",
+   "label": "Fleet Status"
+  },
+  {
+   "chart_name": "Transport Requests by Assignment",
+   "label": "Transport Requests by Assignment"
+  },
+  {
+   "chart_name": "Fuel Requests by Status",
+   "label": "Fuel Requests by Status"
+  },
+  {
+   "chart_name": "Trips by Transporter Type",
+   "label": "Trips by Transporter Type"
+  }
+ ],
+ "number_cards": [
+  {
+   "number_card_name": "Active Trips",
+   "label": "Active Trips"
+  },
+  {
+   "number_card_name": "Trips En Route",
+   "label": "Trips En Route"
+  },
+  {
+   "number_card_name": "Trips Returning",
+   "label": "Trips Returning"
+  },
+  {
+   "number_card_name": "Trips Booked",
+   "label": "Trips Booked"
+  },
+  {
+   "number_card_name": "Vehicles Available",
+   "label": "Vehicles Available"
+  },
+  {
+   "number_card_name": "Vehicles Under Maintenance",
+   "label": "Vehicles Under Maintenance"
+  },
+  {
+   "number_card_name": "Requests Awaiting Assignment",
+   "label": "Requests Awaiting Assignment"
+  },
+  {
+   "number_card_name": "Fuel Requests Awaiting Approval",
+   "label": "Fuel Requests Awaiting Approval"
+  },
+  {
+   "number_card_name": "Border Processing Open",
+   "label": "Border Processing Open"
+  },
+  {
+   "number_card_name": "Documents Expired",
+   "label": "Documents Expired"
+  },
+  {
+   "number_card_name": "Documents Expiring Soon",
+   "label": "Documents Expiring Soon"
+  }
+ ],
+ "shortcuts": [
+  {
+   "label": "New Transport Request",
+   "type": "URL",
+   "link_to": "/app/transport-request/new",
+   "color": "Green",
+   "format": "{}"
+  },
+  {
+   "label": "Vehicle Trips",
+   "type": "DocType",
+   "link_to": "Vehicle Trip",
+   "color": "Blue",
+   "format": "{}",
+   "doc_view": "List"
+  },
+  {
+   "label": "Transport Requests",
+   "type": "DocType",
+   "link_to": "Transport Request",
+   "color": "Orange",
+   "format": "{}",
+   "doc_view": "List"
+  },
+  {
+   "label": "Vehicles",
+   "type": "DocType",
+   "link_to": "Vehicle",
+   "color": "Grey",
+   "format": "{}",
+   "doc_view": "List"
+  },
+  {
+   "label": "Fuel Requests",
+   "type": "DocType",
+   "link_to": "Fuel Request",
+   "color": "Yellow",
+   "format": "{}",
+   "doc_view": "List"
+  },
+  {
+   "label": "Border Processing",
+   "type": "DocType",
+   "link_to": "Border Processing",
+   "color": "Cyan",
+   "format": "{}",
+   "doc_view": "List"
+  },
+  {
+   "label": "Fleet Dashboard",
+   "type": "Dashboard",
+   "link_to": "Fleet Management",
+   "color": "Green"
+  },
+  {
+   "label": "Vehicle Status Report",
+   "type": "Report",
+   "link_to": "Vehicle Status Report",
+   "color": "Grey",
+   "report_ref_doctype": "Vehicle"
+  }
+ ],
+ "links": [
+  {
+   "type": "Card Break",
+   "label": "Operations",
+   "hidden": 0,
+   "onboard": 0,
+   "link_count": 6
+  },
+  {
+   "type": "Link",
+   "label": "Transport Request",
+   "link_type": "DocType",
+   "link_to": "Transport Request",
+   "onboard": 0,
+   "hidden": 0,
+   "is_query_report": 0,
+   "dependencies": ""
+  },
+  {
+   "type": "Link",
+   "label": "Vehicle Trip",
+   "link_type": "DocType",
+   "link_to": "Vehicle Trip",
+   "onboard": 0,
+   "hidden": 0,
+   "is_query_report": 0,
+   "dependencies": ""
+  },
+  {
+   "type": "Link",
+   "label": "Trip Route",
+   "link_type": "DocType",
+   "link_to": "Trip Route",
+   "onboard": 0,
+   "hidden": 0,
+   "is_query_report": 0,
+   "dependencies": ""
+  },
+  {
+   "type": "Link",
+   "label": "Trip Location",
+   "link_type": "DocType",
+   "link_to": "Trip Location",
+   "onboard": 0,
+   "hidden": 0,
+   "is_query_report": 0,
+   "dependencies": ""
+  },
+  {
+   "type": "Link",
+   "label": "Cargo Type",
+   "link_type": "DocType",
+   "link_to": "Cargo Type",
+   "onboard": 0,
+   "hidden": 0,
+   "is_query_report": 0,
+   "dependencies": ""
+  },
+  {
+   "type": "Link",
+   "label": "Packing List",
+   "link_type": "DocType",
+   "link_to": "Packing List",
+   "onboard": 0,
+   "hidden": 0,
+   "is_query_report": 0,
+   "dependencies": ""
+  },
+  {
+   "type": "Card Break",
+   "label": "Fleet",
+   "hidden": 0,
+   "onboard": 0,
+   "link_count": 5
+  },
+  {
+   "type": "Link",
+   "label": "Vehicle",
+   "link_type": "DocType",
+   "link_to": "Vehicle",
+   "onboard": 0,
+   "hidden": 0,
+   "is_query_report": 0,
+   "dependencies": ""
+  },
+  {
+   "type": "Link",
+   "label": "Trailer",
+   "link_type": "DocType",
+   "link_to": "Trailer",
+   "onboard": 0,
+   "hidden": 0,
+   "is_query_report": 0,
+   "dependencies": ""
+  },
+  {
+   "type": "Link",
+   "label": "Vehicle Type",
+   "link_type": "DocType",
+   "link_to": "Vehicle Type",
+   "onboard": 0,
+   "hidden": 0,
+   "is_query_report": 0,
+   "dependencies": ""
+  },
+  {
+   "type": "Link",
+   "label": "Vehicle Documents Type",
+   "link_type": "DocType",
+   "link_to": "Vehicle Documents Type",
+   "onboard": 0,
+   "hidden": 0,
+   "is_query_report": 0,
+   "dependencies": ""
+  },
+  {
+   "type": "Link",
+   "label": "Vehicle Log",
+   "link_type": "DocType",
+   "link_to": "Vehicle Log",
+   "onboard": 0,
+   "hidden": 0,
+   "is_query_report": 0,
+   "dependencies": ""
+  },
+  {
+   "type": "Card Break",
+   "label": "Maintenance & Inspection",
+   "hidden": 0,
+   "onboard": 0,
+   "link_count": 4
+  },
+  {
+   "type": "Link",
+   "label": "Vehicle Inspection",
+   "link_type": "DocType",
+   "link_to": "Vehicle Inspection",
+   "onboard": 0,
+   "hidden": 0,
+   "is_query_report": 0,
+   "dependencies": ""
+  },
+  {
+   "type": "Link",
+   "label": "Vehicle Inspection Template",
+   "link_type": "DocType",
+   "link_to": "Vehicle Inspection Template",
+   "onboard": 0,
+   "hidden": 0,
+   "is_query_report": 0,
+   "dependencies": ""
+  },
+  {
+   "type": "Link",
+   "label": "Vehicle Routine Checklist",
+   "link_type": "DocType",
+   "link_to": "Vehicle Routine Checklist",
+   "onboard": 0,
+   "hidden": 0,
+   "is_query_report": 0,
+   "dependencies": ""
+  },
+  {
+   "type": "Link",
+   "label": "Vehicle Checklist",
+   "link_type": "DocType",
+   "link_to": "Vehicle Checklist",
+   "onboard": 0,
+   "hidden": 0,
+   "is_query_report": 0,
+   "dependencies": ""
+  },
+  {
+   "type": "Card Break",
+   "label": "Fuel & Payments",
+   "hidden": 0,
+   "onboard": 0,
+   "link_count": 4
+  },
+  {
+   "type": "Link",
+   "label": "Fuel Request",
+   "link_type": "DocType",
+   "link_to": "Fuel Request",
+   "onboard": 0,
+   "hidden": 0,
+   "is_query_report": 0,
+   "dependencies": ""
+  },
+  {
+   "type": "Link",
+   "label": "Requested Payments",
+   "link_type": "DocType",
+   "link_to": "Requested Payments",
+   "onboard": 0,
+   "hidden": 0,
+   "is_query_report": 0,
+   "dependencies": ""
+  },
+  {
+   "type": "Link",
+   "label": "Expense",
+   "link_type": "DocType",
+   "link_to": "Expense",
+   "onboard": 0,
+   "hidden": 0,
+   "is_query_report": 0,
+   "dependencies": ""
+  },
+  {
+   "type": "Link",
+   "label": "Fixed Expense",
+   "link_type": "DocType",
+   "link_to": "Fixed Expense",
+   "onboard": 0,
+   "hidden": 0,
+   "is_query_report": 0,
+   "dependencies": ""
+  },
+  {
+   "type": "Card Break",
+   "label": "Border & Clearing",
+   "hidden": 0,
+   "onboard": 0,
+   "link_count": 7
+  },
+  {
+   "type": "Link",
+   "label": "Border Processing",
+   "link_type": "DocType",
+   "link_to": "Border Processing",
+   "onboard": 0,
+   "hidden": 0,
+   "is_query_report": 0,
+   "dependencies": ""
+  },
+  {
+   "type": "Link",
+   "label": "Border Clearance",
+   "link_type": "DocType",
+   "link_to": "Border Clearance",
+   "onboard": 0,
+   "hidden": 0,
+   "is_query_report": 0,
+   "dependencies": ""
+  },
+  {
+   "type": "Link",
+   "label": "Bond",
+   "link_type": "DocType",
+   "link_to": "Bond",
+   "onboard": 0,
+   "hidden": 0,
+   "is_query_report": 0,
+   "dependencies": ""
+  },
+  {
+   "type": "Link",
+   "label": "Files",
+   "link_type": "DocType",
+   "link_to": "Files",
+   "onboard": 0,
+   "hidden": 0,
+   "is_query_report": 0,
+   "dependencies": ""
+  },
+  {
+   "type": "Link",
+   "label": "Import",
+   "link_type": "DocType",
+   "link_to": "Import",
+   "onboard": 0,
+   "hidden": 0,
+   "is_query_report": 0,
+   "dependencies": ""
+  },
+  {
+   "type": "Link",
+   "label": "Export",
+   "link_type": "DocType",
+   "link_to": "Export",
+   "onboard": 0,
+   "hidden": 0,
+   "is_query_report": 0,
+   "dependencies": ""
+  },
+  {
+   "type": "Link",
+   "label": "Container",
+   "link_type": "DocType",
+   "link_to": "Container",
+   "onboard": 0,
+   "hidden": 0,
+   "is_query_report": 0,
+   "dependencies": ""
+  },
+  {
+   "type": "Card Break",
+   "label": "Zimbabwe Compliance",
+   "hidden": 0,
+   "onboard": 0,
+   "link_count": 1
+  },
+  {
+   "type": "Link",
+   "label": "ZIMRA Fleet Settings",
+   "link_type": "DocType",
+   "link_to": "ZIMRA Fleet Settings",
+   "onboard": 0,
+   "hidden": 0,
+   "is_query_report": 0,
+   "dependencies": ""
+  },
+  {
+   "type": "Card Break",
+   "label": "Reports",
+   "hidden": 0,
+   "onboard": 0,
+   "link_count": 7
+  },
+  {
+   "type": "Link",
+   "label": "Vehicle Status Report",
+   "link_type": "Report",
+   "link_to": "Vehicle Status Report",
+   "onboard": 0,
+   "hidden": 0,
+   "is_query_report": 1,
+   "dependencies": ""
+  },
+  {
+   "type": "Link",
+   "label": "Trip Report",
+   "link_type": "Report",
+   "link_to": "Trip Report",
+   "onboard": 0,
+   "hidden": 0,
+   "is_query_report": 1,
+   "dependencies": ""
+  },
+  {
+   "type": "Link",
+   "label": "Transport Assignment Report",
+   "link_type": "Report",
+   "link_to": "Transport Assignment Report",
+   "onboard": 0,
+   "hidden": 0,
+   "is_query_report": 1,
+   "dependencies": ""
+  },
+  {
+   "type": "Link",
+   "label": "Fuel Report",
+   "link_type": "Report",
+   "link_to": "Fuel Report",
+   "onboard": 0,
+   "hidden": 0,
+   "is_query_report": 1,
+   "dependencies": ""
+  },
+  {
+   "type": "Link",
+   "label": "Truck Document Expiration Report",
+   "link_type": "Report",
+   "link_to": "Truck Document Expiration Report",
+   "onboard": 0,
+   "hidden": 0,
+   "is_query_report": 1,
+   "dependencies": ""
+  },
+  {
+   "type": "Link",
+   "label": "Vehicles En Route to Border",
+   "link_type": "Report",
+   "link_to": "Vehicles En Route to Border",
+   "onboard": 0,
+   "hidden": 0,
+   "is_query_report": 1,
+   "dependencies": ""
+  },
+  {
+   "type": "Link",
+   "label": "Daily Customer Report - Transport",
+   "link_type": "Report",
+   "link_to": "Daily Customer Report - Transport",
+   "onboard": 0,
+   "hidden": 0,
+   "is_query_report": 1,
+   "dependencies": ""
+  }
+ ],
+ "roles": [
+  {
+   "role": "Fleet Manager"
+  },
+  {
+   "role": "Fleet Coordinator"
+  },
+  {
+   "role": "Clearing Agent"
+  },
+  {
+   "role": "System Manager"
+  }
+ ]
+}

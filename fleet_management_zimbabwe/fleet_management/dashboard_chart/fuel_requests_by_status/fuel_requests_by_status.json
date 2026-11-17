@@ -1,0 +1,17 @@
+{
+ "doctype": "Dashboard Chart",
+ "name": "Fuel Requests by Status",
+ "chart_name": "Fuel Requests by Status",
+ "chart_type": "Group By",
+ "document_type": "Fuel Request",
+ "type": "Bar",
+ "is_public": 1,
+ "is_standard": 1,
+ "module": "Fleet Management",
+ "filters_json": "[]",
+ "dynamic_filters_json": "[]",
+ "color": "#2E7D32",
+ "custom_options": "{}",
+ "group_by_type": "Count",
+ "group_by_based_on": "status"
+}
